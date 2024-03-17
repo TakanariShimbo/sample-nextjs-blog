@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={inter.className}>
+      <body className="container mx-auto bg-slate-700 text-slate-50">
         <Header/>
         {children}
       </body>
