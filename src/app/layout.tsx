@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
-// const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "My-Blog",
@@ -18,10 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className="container mx-auto bg-slate-700 text-slate-50">
-        <Header/>
+      <body className={`container mx-auto bg-slate-700 text-slate-50 ${inter.className}`}>
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
